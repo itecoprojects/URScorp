@@ -1,0 +1,4 @@
+# Module urscorp_web
+# RPC service class, partial path of RPC policy file
+com.google.gwt.logging.shared.RemoteLoggingService, CE18CF7C7088FCD25ACC685CF4BAE60B.gwt.rpc
+ru.urscorp.web.client.GreetingService, 51AAE538F70B2FE24669D7779B09068C.gwt.rpc

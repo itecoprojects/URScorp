@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="urscorp-ear">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="urscorp-web.war" deploy-path="/" handle="module:/resource/urscorp-web/urscorp-web">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.core-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.core-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.asm-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.asm-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-fileupload-1.2.2.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/common/commons-fileupload-1.2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections-3.2.1.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/common/commons-collections-3.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.aspects-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.aspects-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-api-2.2.3.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/jaxb/jaxb-api-2.2.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-impl-2.2.4-1.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/jaxb/jaxb-impl-2.2.4-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gwt-jquery.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/gwt/gwt-jquery.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gwt-dev.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/gwt/gwt-dev.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="openjpa-all-2.1.1.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/openJPA/openjpa-all-2.1.1.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.1.1.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/common/commons-logging-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.oxm-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.oxm-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.test-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.test-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.instrument.tomcat-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.instrument.tomcat-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.context.support-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.context.support-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gxt-3.0.0.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/gwt/gxt-3.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.web.servlet-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.web.servlet-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gxt-legacy-3.0.0.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/gwt/gxt-legacy-3.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.context-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.context-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.transaction-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.transaction-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gwt-user.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/gwt/gwt-user.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.beans-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.beans-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.aop-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.aop-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.instrument-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.instrument-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.expression-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.expression-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gxt-chart-3.0.0.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/gwt/gxt-chart-3.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aopalliance-1.0.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/aopalliance/aopalliance-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mysql-connector-java-5.1.18-bin.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/sqlserver/mysql-connector-java-5.1.18-bin.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.orm-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.orm-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/common/commons-lang.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.web-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.web-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-xjc-2.2.4-1.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/jaxb/jaxb-xjc-2.2.4-1.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.jdbc-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.jdbc-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-io-2.1.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/common/commons-io-2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.web.struts-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.web.struts-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.jms-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.jms-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.web.portlet-3.1.0.RELEASE.jar" deploy-path="/" handle="module:/classpath/lib/urscorp-lib/spring/org.springframework.web.portlet-3.1.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="urscorp-dao.jar" deploy-path="/" handle="module:/resource/urscorp-dao/urscorp-dao">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

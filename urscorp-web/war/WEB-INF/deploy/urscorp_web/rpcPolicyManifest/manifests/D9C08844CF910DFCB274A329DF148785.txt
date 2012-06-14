@@ -1,0 +1,2 @@
+serviceClass: ru.urscorp.web.client.GreetingService
+path: 51AAE538F70B2FE24669D7779B09068C.gwt.rpc

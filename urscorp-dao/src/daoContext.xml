@@ -1,0 +1,80 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd">
+
+	<context:annotation-config />
+	<tx:jta-transaction-manager />
+	<tx:annotation-driven />
+<!-- org.springframework.orm.jpa.JpaTransactionManager -->
+   <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="entityManagerFactory"
+          class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.OpenJpaVendorAdapter"/>
+        </property>
+        <property name="persistenceUnitName" value="urscorp-dao"/>
+        <property name="persistenceUnitManager" ref="persistenceUnitManager"/>
+        <property name="jpaProperties">
+            <props>
+                <prop key="openjpa.Log">commons</prop>
+                <prop key="openjpa.ConnectionDriverName">com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource</prop>
+                <prop key="openjpa.TransactionMode">local</prop>
+                <prop key="openjpa.ConnectionFactoryMode">local</prop>
+                <prop key="openjpa.jdbc.Schema">ursDB</prop>
+                <prop key="openjpa.jdbc.DBDictionary">mysql</prop>
+                <prop key="openjpa.Log">SQL=TRACE</prop>
+				<prop key="openjpa.Log">true</prop>
+            </props>
+        </property>
+    </bean>
+
+
+	<tx:annotation-driven />
+	
+    <bean id="persistenceUnitManager" class="org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager">
+        <property name="persistenceXmlLocations">
+            <list>
+                <value>classpath*:META-INF/persistence.xml</value>
+            </list>
+        </property>
+        <property name="dataSources">
+            <map>
+                <entry key="dataSource" value-ref="dataSource"/>
+            </map>
+        </property>
+    </bean>
+	
+	<jee:jndi-lookup id="dataSource" jndi-name="jdbc/ursDS"/>
+	
+ <!--    <bean id="dataSource"
+           class="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource">
+         <property name="URL" value="jdbc:mysql://localhost:3306/mailENC"/>
+         <property name="Url" value="jdbc:mysql://localhost:3306/mailENC"/>
+         <property name="User" value="mailAgent"/>
+         <property name="Password" value="Rjn@vfbk"/>
+         <property name="DatabaseName" value="mailENC"/>
+         <property name="SocketFactory" value="com.mysql.jdbc.StandardSocketFactory"/>
+     </bean>
+    
+	<bean id="userDaoService" class="ru.sendto.dao.service.UserDaoServiceImpl" >
+		<property name="userDao" ref="userDao"/>
+	</bean>
+	
+	<bean id="userDao" class="ru.sendto.dao.dao.UserDAOImpl" /> -->
+	
+	<bean id="utilService" class="ru.urscorp.dao.service.UtilServiceImpl" />
+	
+	<bean id="utilJpa" class="ru.urscorp.dao.jpa.UtilJpaImpl" />
+	
+	
+</beans>
